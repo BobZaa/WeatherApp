@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Temperatur.Weekdays();
+            // GO GO GO GO!!!! RUN!
+            string[] days = Temperature.GetWeekDays();
+            int[] temperatures = Temperature.AskUserForTemperaturesEachDay(days);
+            int averageTemperature = Temperature.CalculateAverageOfTemperatures(temperatures);
+            Console.WriteLine("The average temperature was: " + averageTemperature);
         }
     }
 }
